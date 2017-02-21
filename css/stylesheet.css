@@ -1,0 +1,278 @@
+html {
+	font-family: "Cochin", Times, serif;
+}
+
+header {
+    width: 80%;
+    display: inline;
+    text-align: right;
+    background: cyan;
+}
+
+.#f9f6f9 {
+    background-color: #f9f6f9;
+    
+}
+
+a:link {
+	font-family: "Cochin", Times, serif;
+    color: #27023C;
+}
+
+a:visited {
+    color: #160122;
+}
+
+main {
+    background-color: aquamarine;
+    
+}
+
+body {
+    width:95%;
+}
+    
+
+footer {
+    height:500px;
+    background-color: aqua;
+    display: inline;
+    
+}
+
+fieldset{
+    width:50%;
+    color: #f9f6f9;
+	background-color: rgba(101, 18, 66, 0.94);
+}
+
+.prof{
+	a:link #f9f6f9;
+    width:100%;
+}
+
+form{
+    width:50px;
+}
+
+legend{
+    width:50%
+}
+
+.uphead{
+    width: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.iheader{
+    width:100%;
+    height:5%;
+    background-color: #811554;
+}
+
+.Sidebar form{
+    display: inline;
+    text-align: center;
+}
+
+.search{
+    text-align: center;
+    order:1;
+}
+
+.tags{
+    text-align:center;
+    order:2;
+}
+
+.pics {
+    width:85%;
+    min-width: 380px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-center;
+    flex-wrap: wrap;
+    border: 1px solid gold;
+}
+
+.Show{
+    width:85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.Show img{
+    align-self: center;
+    flex-basis: auto;
+    max-height: 85%;
+    max-width: 85%;
+}
+
+.Posts {
+    display:flex;
+    flex-direction: row;
+    background-color: #66023C;
+    
+}
+
+.Sidebar {
+    display: flex;
+    flex-direction: column;
+    width:15%;
+    background-color: #811554;
+    border:1px solid black;
+    min-width: 150px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.imgs{
+    width:80%;
+}
+
+.pics img{
+    max-width: 126px;
+    max-height: 126px;
+    min-width: 126px;
+    min-height: 126px;
+    flex-basis: auto;
+}
+
+.prof {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tagging{
+    
+}
+
+.deleting{
+    order: 5;
+}
+
+#logintitle {
+text-align: center;
+background-color: rgba(101, 18, 66, 0.94);
+border: 1px solid #f9f6f9;
+}
+
+#loginsubmit {
+	background-color: #f9f6f9;
+    width: 90px;
+    height: 30px;
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 5px;
+    border: none;
+}
+
+/*button copy test*/
+#testingshit {
+background-color: #811554;
+margin:auto;
+display: flex;
+justify-content: space-between;
+width: 60%;
+position: relative;
+left: 10%;
+}
+
+#prev {
+	background-color: #f9f6f9;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border:1px solid black;
+    order: 3;
+}
+
+#next {
+	background-color: #f9f6f9;
+    width: 150px;
+    height: 50px;
+    border-radius: 5px;
+    border:1px solid black;
+    order: 1;
+}
+
+
+.Show {
+	color: #f9f6f9;
+	border: 1px solid gold;
+	width: 100%;
+}
+
+#indexsearch {
+	margin:auto;
+	width:50%
+}
+
+.pnumb {
+position: relative;
+color: #f9f6f9;
+bottom: 39px;
+border: 1px solid #f9f6f9;
+border-radius: 100%;
+font-size: 250%;
+padding-left: 12.5px;
+padding-right:12.5px;
+background-color: #66023c;
+}
+
+fieldset {
+border-color: #f9f6f9;
+}
+
+
+#messagebox {
+min-width: 150px;
+color: #f9f6f9;
+display:flex;
+align-items: center;
+justify-content: space-between;
+background-color: brown;
+width: 15%;
+border: 1px solid black;
+}
+
+#messagetext {
+order: 2;
+position: relative;
+right: 15px;
+}
+
+#messageclear {
+order 1;
+}
+
+#commentcontainer {
+width: 500px;
+border: 1px solid gold;
+}
+
+#commenttext {
+border: 1px solid gold;
+}
+
+.comments {
+}
+
+textarea {
+width: 500px;
+height:120px;
+}
+
+#postedon {
+text-align: center;
+}
+
+#posting {
+position: relative;
+top: 10px;
+color: gold;
+}
