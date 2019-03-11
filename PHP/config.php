@@ -1,18 +1,18 @@
 <?php
 session_start();
 
-/*
+
 $user = 'santtuta';
 $pass = 'turhatietokanta';
 $host = 'mysql.metropolia.fi';
 $dbname = 'santtuta';
-*/
 
+/*
 $user = 'Chronon';
 $pass = '1qw23er45t';
 $host = 'localhost';
 $dbname = 'Chronon';
-
+*/
 
 //Tietokantayhteys sulkeutuu automaattisesti kun </htm> eli sivun scripti loppuu
 //Normaali olion elinkaari

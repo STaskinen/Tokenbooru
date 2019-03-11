@@ -5,9 +5,11 @@ include("PHP/iheader.php");
     <html>
 
     <body>
+        <?php
+        $DELETED = 'false';
+        ?>
         <main class="Posts">
             <?php
-            $DELETED = 'false';
             if($_GET['post'] === '' or $_GET['post'] === null){
                 redirect('posts.php');
             };
@@ -169,7 +171,7 @@ include("PHP/iheader.php");
                 $showImg = $iquery->fetch();
                 echo ('
                 <img src="uploads/'. $_GET['post'] .'">
-                <h8 id=postedon >Posted: </br>' . $showImg['posted'] . '</h8>
+                <p>Posted: ' . $showImg['posted'] . '</p>
                 ');
                 ?>
                 <div class="comments">
@@ -197,25 +199,27 @@ include("PHP/iheader.php");
                             };
                         };
                     };
-                    $cquery = $DBH->prepare('SELECT Ctext, Ptime,BO_comments.CID, uname, BO_commenter.UID FROM BO_comments, BO_users, BO_commenter WHERE BO_comments.IID = ' . $SHOWID['IID'] . ' AND BO_comments.CID = BO_commenter.CID AND BO_commenter.UID = BO_users.UID ORDER BY Ptime;');
+                    $cquery = $DBH->prepare('SELECT Ctext, Ptime, BO_comments.CID, uname, BO_commenter.UID FROM BO_comments, BO_users, BO_commenter WHERE BO_comments.IID = ' . $SHOWID['IID'] . ' AND BO_comments.CID = BO_commenter.CID AND BO_commenter.UID = BO_users.UID ORDER BY Ptime;');
                     $cquery->execute();
                     $ccount = $cquery->rowCount();
                     for($a=0;$a<($cquery->rowCount());$a++){
                     $COM = $cquery->fetch();
-                        echo('<div id=commentcontainer>
+                        echo('<p>
                             <tr>
-                                <td id=commenttext>
-                                    </br>'. ($COM['Ctext']) .'
+                                <td>
+                                ID:' . $COM['CID'] . '</br>
+                                    '. ($COM['Ctext']) .'
                                 </td>
                                 <td>
-                                <h4 id=posting>
-                                User: ' . $COM['uname'] . '
-                                </br>
-                                        '. ($COM['Ptime']) . '
+                                    <h4>
+                                        Posted</br>'. ($COM['Ptime']) . '
                                     </h4>
+                                    <p>
+                                    Poster: ' . $COM['uname'] . '
+                                    </p>
                                 </td>
                             </tr>
-                        </div>
+                            </p>
                         ');
                         $CIDING[$a] = $COM['CID'];
                     if($COM['UID'] === $_SESSION['ID'] or $_SESSION['UT'] === "master" or $_SESSION['UT'] === "mod"){

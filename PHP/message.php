@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<div id=messagebox>
 <?php
-    echo ("<p id=messagetext >" . $_SESSION['message'] . "</p>");
+    echo($_SESSION['message']);
 ?>
-<form id=messageclear method="post">
+<form method="post">
 <input type="submit" name="clrmsg" value="X"/>
 </form>
 <?php
@@ -13,4 +12,3 @@ if(($_POST['clrmsg'])){
     redirect($_SERVER['PHP_SELF']);
 }
 ?>
-</div>

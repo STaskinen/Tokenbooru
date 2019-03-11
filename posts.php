@@ -110,15 +110,6 @@ WHERE BO_tags.tag = "' . $stags[2] . '" AND BO_tags.TID = BO_image_tags.tag_id A
                 echo('<a href="show.php?post=' . $image['filename'] . '"><img src="uploads/' . $image['filename'] . '"></a>');
             };
             ?>
-
-                    <!--
-            <img src="images/Frupfrup.png">
-            <img src="images/Hartaran.png">
-            <img src="images/Hyperpuffin.png">
-            <img src="images/Spacedra.png">
-            <img src="images/Toroka.png">
-            <img src="images/Watcher.png">
-            -->
             </div>
         </main>
         

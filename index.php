@@ -4,12 +4,8 @@ include("PHP/iheader.php");
 ?>
 <!DOCTYPE html>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
-</head>
-
     <body class="MPage">
-    <form id=indexsearch class="MPsearch">
+    <form class="MPsearch">
         <input type="text" name="tsearch"/>
             <input type="submit" name="search" value="Search"/>
             </form>
@@ -18,5 +14,6 @@ include("PHP/iheader.php");
                 redirect('posts.php?tsearch=' . $_GET['tsearch']);
             }
             ?>
+        
     </body>
 </html>

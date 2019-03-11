@@ -92,7 +92,7 @@ legend{
     min-width: 380px;
     display: flex;
     align-items: flex-start;
-    justify-content: space-center;
+    justify-content: space-between;
     flex-wrap: wrap;
     border: 1px solid gold;
 }
